@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroupChat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Join ChatGroup</h2>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">ChatGroup</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <div class="messages">
+
+                <!-- <div class="message my-message">
+                    <div>
+                        <div class="name">You</div>
+                        <div class="text">Hi</div>
+                    </div>
+                </div>
+
+                <div class="update">
+                    Abc has joined the Group
+                </div>
+
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Abc</div>
+                        <div class="text">Hi</div>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
